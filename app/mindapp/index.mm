@@ -25,16 +25,16 @@
 </node>
 </node>
 </node>
-<node CREATED="1359088780633" ID="ID_1650765873" MODIFIED="1365374729136" TEXT="info: &#xe40;&#xe01;&#xe35;&#xe48;&#xe22;&#xe27;&#xe01;&#xe31;&#xe1a; &#xe2d;&#xe1a;&#xe15;. &#xe1a;&#xe32;&#xe07;&#xe15;&#xe30;&#xe44;&#xe19;&#xe22;&#xe4c;">
-<node CREATED="1351346180305" ID="ID_1922699313" MODIFIED="1359088932153" TEXT="link: &#xe1b;&#xe23;&#xe30;&#xe27;&#xe31;&#xe15;&#xe34;: /info/history"/>
-<node CREATED="1359089665177" ID="ID_1284203500" MODIFIED="1359089674763" TEXT="link: &#xe1a;&#xe38;&#xe04;&#xe25;&#xe32;&#xe01;&#xe23;: /info/exec"/>
-<node CREATED="1359089665177" ID="ID_115793268" MODIFIED="1359150919797" TEXT="link: &#xe15;&#xe34;&#xe14;&#xe15;&#xe48;&#xe2d;: /info/contact"/>
+<node CREATED="1359088780633" ID="ID_1650765873" MODIFIED="1398505938098" TEXT="info: About Mindapp">
+<node CREATED="1351346180305" ID="ID_1922699313" MODIFIED="1398505955172" TEXT="link: History: /info/history"/>
+<node CREATED="1359089665177" ID="ID_1284203500" MODIFIED="1398505968857" TEXT="link: Developer: /info/exec"/>
+<node CREATED="1359089665177" ID="ID_115793268" MODIFIED="1398505979921" TEXT="link: Contact: /info/contact"/>
 </node>
-<node CREATED="1359088796547" ID="ID_171090218" MODIFIED="1359238457094" TEXT="activity: &#xe02;&#xe48;&#xe32;&#xe27;/&#xe01;&#xe34;&#xe08;&#xe01;&#xe23;&#xe23;&#xe21;/&#xe08;&#xe31;&#xe14;&#xe0b;&#xe37;&#xe49;&#xe2d;">
-<node CREATED="1359089665177" ID="ID_1890337307" MODIFIED="1359091512526" TEXT="link: &#xe02;&#xe48;&#xe32;&#xe27;: /activity/news"/>
-<node CREATED="1359089665177" ID="ID_1000998133" MODIFIED="1359091530159" TEXT="link: &#xe01;&#xe34;&#xe08;&#xe01;&#xe23;&#xe23;&#xe21;: /activity/act"/>
-<node CREATED="1359089665177" ID="ID_526761106" MODIFIED="1359091551641" TEXT="link: &#xe08;&#xe31;&#xe14;&#xe0b;&#xe37;&#xe49;&#xe2d; &#xe08;&#xe31;&#xe14;&#xe08;&#xe49;&#xe32;&#xe07;: /activity/procure"/>
-<node CREATED="1359090866384" ID="ID_544120585" MODIFIED="1359090957422" TEXT="new: &#xe1a;&#xe31;&#xe19;&#xe17;&#xe36;&#xe01;&#xe02;&#xe48;&#xe32;&#xe27; / &#xe01;&#xe34;&#xe08;&#xe01;&#xe23;&#xe23;&#xe21;">
+<node CREATED="1359088796547" ID="ID_171090218" MODIFIED="1398506109211" TEXT="activity: News/Acitivities">
+<node CREATED="1359089665177" ID="ID_1890337307" MODIFIED="1398505992537" TEXT="link: News: /activity/news"/>
+<node CREATED="1359089665177" ID="ID_1000998133" MODIFIED="1398506015399" TEXT="link: Activities: /activity/act"/>
+<node CREATED="1359089665177" ID="ID_526761106" MODIFIED="1398506035647" TEXT="link: Mindapp Store: /activity/procure"/>
+<node CREATED="1359090866384" ID="ID_544120585" MODIFIED="1398506062357" TEXT="new: News/Activities Editor">
 <node CREATED="1359090876116" ID="ID_1116344656" MODIFIED="1359090924502" TEXT="enter: &#xe1a;&#xe31;&#xe19;&#xe17;&#xe36;&#xe01;&#xe02;&#xe48;&#xe32;&#xe27; / &#xe01;&#xe34;&#xe08;&#xe01;&#xe23;&#xe23;&#xe21;">
 <icon BUILTIN="attach"/>
 <node CREATED="1359090869933" ID="ID_770508833" MODIFIED="1359090874022" TEXT="role: a"/>
