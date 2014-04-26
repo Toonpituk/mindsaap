@@ -1,9 +1,9 @@
 # encoding: utf-8
 MM = "#{Rails.root}/app/mindapp/index.mm"
-DEFAULT_TITLE = 'องค์การบริหารส่วนตำบลบางตะไนย์'
-DEFAULT_HEADER = 'อบต. บางตะไนย์'
+DEFAULT_TITLE = 'MindApp'
+DEFAULT_HEADER = 'MindApp'
 GMAP = true
-NEXT = "ดำเนินการต่อ >"
+NEXT = "Next >"
 # unset IMAGE_LOCATION to use cloudinary
 # IMAGE_LOCATION = "upload"
 # for debugging

@@ -1,16 +1,16 @@
 .field(data-role="fieldcontain")
-  %label.ui-input-text ชื่อ
+  %label.ui-input-text Name
   = b current_user.code
 .field(data-role="fieldcontain")
-  %label.ui-input-text โทรศัพท์
+  %label.ui-input-text Phone
   = b current_user.phone
 .field(data-role="fieldcontain")
   %label.ui-input-text Email
   = b current_user.email
 .field(data-role="fieldcontain")
-  %label.ui-input-text อำนาจดำเนินการ
+  %label.ui-input-text Authorization
   = b current_user.role
 
 - if @xmains
-  %h2 งานที่อยู่ระหว่างดำเนินการ
+  %h2 Pending Process
   = render :partial=>"mindapp/pending_page", :locals=>{:xmains=>@xmains}
