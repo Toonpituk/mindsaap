@@ -1,0 +1,9 @@
+development:
+  cloud_name: "helnfwsjc"
+  api_key: "536692674236424"
+  api_secret: "qNyCrdCE8FtFtMAyclB3bih60NQ"
+
+production:
+  cloud_name: "helnfwsjc"
+  api_key: "536692674236424"
+  api_secret: "qNyCrdCE8FtFtMAyclB3bih60NQ"

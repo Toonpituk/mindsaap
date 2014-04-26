@@ -1,0 +1,8 @@
+%h3= @activity.subject
+- if @activity.pic
+  - basename = File.basename(@activity.pic)
+  = cl_image_tag basename, :width => 800, :height => 600, :crop => :fit, :style=>"margin-left:30px;"
+#detail= @activity.detail
+- if @activity.attach
+  = image_tag "page.png"
+  = link_to_blank "Download attached file", @activity.attach

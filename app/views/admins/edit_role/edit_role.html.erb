@@ -1,0 +1,7 @@
+<%
+  user = User.find_by :code=> $xvars["select_user"]["code"]
+%>
+รหัสอำนาจดำเนินการ คั่นด้วยเครื่องหมายลูกน้ำ
+<p>
+<%= label_tag :role, "อำนาจดำเนินการ" %>
+<%= text_field_tag :role, user.role %>

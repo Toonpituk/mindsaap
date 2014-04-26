@@ -1,0 +1,5 @@
+.date {font-style: italic; font-size: 10pt; color: #777}
+td.num {text-align:right;}
+td.group {width:100px;font-weight:bold;}
+td.people {text-align:center}
+div.person {display:inline-block}

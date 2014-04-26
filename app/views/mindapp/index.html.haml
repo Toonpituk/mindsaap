@@ -1,0 +1,12 @@
+= render :partial => 'coming_soon'
+- @activities.each do |activity|
+  .person(style="width:30%; vertical-align:top")
+    %h3(style="margin-bottom:0;")
+      = link_to truncate(activity.subject, :length=>30), :controller=>"activity", :action=>"show", :id=>activity.id
+      - if activity.attach
+        = link_to_blank image_tag("page.png"), activity.attach
+    .date= date_thai(activity.created_at, :time=>true)
+    - if activity.pic
+      - basename = File.basename(activity.pic)
+      = cl_image_tag basename, :width => 300, :height => 300, :crop => :fit
+    .detail= truncate(activity.detail, :length=>100)

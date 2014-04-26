@@ -1,0 +1,15 @@
+<%
+  code = Code.new
+%>
+<%= fields_for code do |f| %>
+  <%= f.label :atype, "Type" %>
+  <%= f.select :atype, [['View',1],['Model',2],['Controller',3]],{},"data-native-menu"=>"false" %>
+  <%= f.label :subject, "Subject" %>
+  <%= f.text_field :subject %>
+  <%= f.label :detail, "Detail" %>
+  <%= f.text_area :detail, :cols=>50, :rows=>6 %>
+  <%= f.label :pic, "Screen Shot" %>
+  <%= f.file_field :pic %>
+  <%= f.label :attach, "Attached pdf" %>
+  <%= f.file_field :attach %>
+<% end %>

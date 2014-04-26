@@ -1,0 +1,10 @@
+<%
+  user = current_user
+%>
+<h3><%= user.code %></h3>
+<%= fields_for user do |f| %>
+  <%= f.label :phone, "โทรศัพท์" %>
+  <%= f.text_field :phone %>
+  <%= f.label :email, "Email" %>
+  <%= f.text_field :email %>
+<% end %>

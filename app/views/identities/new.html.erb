@@ -1,0 +1,47 @@
+<%- @title= 'ขึ้นทะเบียนผู้ใช้ใหม่' %>
+<div data-role="collapsible" data-collapsed="false" data-theme="e" data-content-theme="c" data-mini="true">
+  <h3>คำแนะนำ</h3>
+  <p>
+    <ul>
+      <li>รหัสผู้ใช้ - โปรดตั้งชื่อผู้ใช้ของท่าน ชื่อนี้จะต้องเป็นชื่อใหม่ที่ไม่ซ้ำกับชื่อที่มีอยู่แล้วในระบบ ควรเป็นตัวอักษรภาษาอังกฤษโดยไม่มีเว้นวรรค เช่น somchai1</li>
+      <li>โทรศัพท์ - ให้ใส่เลขหมายโทรศัพท์ที่สามารถติดต่อได้</li>
+      <li>Email - รหัสไปรษณีย์อิเล็กโทรนิกส์ จะต้องไม่ซ้ำกับ Email ของผู้ใช้อื่นๆที่มีอยู่แล้วในระบบ</li>
+      <li>รหัสผ่าน - ไม่ควรตั้งเป็นภาษาไทยหรือเครื่องหมายที่พิมพ์ยาก เนื่องจากเวลาพิมพ์จะมองไม่เห็น รหัสผ่านจำเป็นต้องกรอกเสมอเพื่อป้องกันมิให้ผู้อื่นมาใช้บัญชีของท่านได้</li>
+      <li>ช่องตัวเลขทั้งหมด ต้องกรอกเป็นตัวเลขอารบิค</li>
+      <li>ท่านสามารถเปิด - ปิด ข้อความแนะนำได้ โดยกดที่แถบเหลืองด้านบน</li>
+    </ul>
+  </p>
+</div>
+<%= form_tag "/auth/identity/register", {'data-ajax'=>'false'} do %>
+  <% if @identity && @identity.errors.any? %>
+    <div class="error_messages">
+      <h2><%= pluralize(@identity.errors.count, "error") %> prohibited this account from being saved:</h2>
+      <ul>
+      <% @identity.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field" data-role="fieldcontain">
+    <%= label_tag :code, 'รหัสผู้ใช้' %>
+    <%= text_field_tag :code, @identity.try(:code) %>
+  </div>
+  <div class="field" data-role="fieldcontain">
+    <%= label_tag :phone, "โทรศัพท์" %>
+    <%= text_field_tag :phone, @identity.try(:email) %>
+  </div>
+  <div class="field" data-role="fieldcontain">
+    <%= label_tag :email %>
+    <%= text_field_tag :email, @identity.try(:email) %>
+  </div>
+  <div class="field" data-role="fieldcontain">
+    <%= label_tag :password, 'รหัสผ่าน' %>
+    <%= password_field_tag :password %>
+  </div>
+  <div class="field" data-role="fieldcontain">
+    <%= label_tag :password_confirmation, 'ยืนยันรหัสผ่าน' %>
+    <%= password_field_tag :password_confirmation %>
+  </div>
+  <div class="actions"><%= submit_tag "สร้างผู้ใช้ใหม่" %></div>
+<% end %>

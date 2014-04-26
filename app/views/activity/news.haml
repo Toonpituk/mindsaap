@@ -1,0 +1,11 @@
+= paginate @activities
+%table{:id=>"pending-table", :width=>"100%"}
+  %tr{:style=>"color:white; background-color:#97BF60;"}
+    %th เรื่อง
+    %th วันที่
+    %th ลบ
+  - @activities.each do |activity|
+    %tr
+      %td= link_to activity.subject, :controller=>"activity", :action=>"show", :id=>activity.id
+      %td= date_thai activity.created_at
+      %td(align='center')= link_to image_tag('delete.png', style:'border:none; float:none;'), "#", :onclick=>"if (confirm('กรุณายืนยัน')) {location.hash='/activity/rm/#{activity.id}';}"

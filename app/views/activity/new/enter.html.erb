@@ -1,0 +1,15 @@
+<%
+  act = Act.new
+%>
+<%= fields_for act do |f| %>
+  <%= f.label :atype, "ประเภท" %>
+  <%= f.select :atype, [['ข่าว',1],['กิจกรรม',2],['จัดซื้อจัดจ้าง',3]],{},"data-native-menu"=>"false" %>
+  <%= f.label :subject, "เรื่อง" %>
+  <%= f.text_field :subject %>
+  <%= f.label :detail, "รายละเอียด" %>
+  <%= f.text_area :detail, :cols=>50, :rows=>6 %>
+  <%= f.label :pic, "ภาพประกอบ" %>
+  <%= f.file_field :pic %>
+  <%= f.label :attach, "เอกสารประกอบ pdf" %>
+  <%= f.file_field :attach %>
+<% end %>
