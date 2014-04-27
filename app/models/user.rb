@@ -4,7 +4,6 @@ class User
   field :uid, :type => String
   field :code, :type => String
   field :email, :type => String
-  field :phone, :type => String
   field :role, :type => String
   belongs_to :identity
   has_many :xmains, :class_name => "Mindapp::Xmain"

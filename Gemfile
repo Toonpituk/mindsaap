@@ -1,13 +1,10 @@
 source 'https://rubygems.org'
 
-ruby '1.9.3'
 gem 'rails', '3.2.11'
-gem 'mindapp', :git=> "git://github.com/songrit/mindapp.git"
-# gem 'mindapp', :path => "../mindapp"
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
+gem "mindapp",  :git=> "https://github.com/songrit/mindapp.git"
 
 
 # Gems used only for assets and not required
@@ -17,7 +14,7 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
- # gem 'therubyracer', :platforms => :ruby
+  # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
 end
@@ -39,23 +36,25 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 
+gem "mongo", "1.5.1"
+gem "bson_ext", "1.5.1"
+gem "mongoid"
 gem "nokogiri"
 gem "haml-rails"
 gem "mail"
 gem "prawn"
-gem "mongo", "1.5.1"
-gem "bson_ext", "1.5.1"
-gem "mongoid"
 gem "redcarpet"
 gem "bcrypt-ruby", "~> 3.0.0"
 gem "omniauth-identity"
 gem "cloudinary"
-gem 'kaminari'
-gem "mongo_session_store-rails3"
+gem "kaminari"
 group :development, :test do
   gem "debugger"
   gem "rspec"
   gem "rspec-rails"
   gem "better_errors"
   gem "binding_of_caller"
+end
+
+group :development, :test do
 end

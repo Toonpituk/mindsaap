@@ -1,4 +1,4 @@
-Bt9::Application.routes.draw do
+Mindsaap::Application.routes.draw do
   match ':controller(/:action(/:id))(.:format)'
 
   match '/logout' => 'sessions#destroy', :as => 'logout'
@@ -62,7 +62,7 @@ Bt9::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'main#index'
+  # root :to => 'welcome#index'
 
   # See how all your routes lay out with "rake routes"
 

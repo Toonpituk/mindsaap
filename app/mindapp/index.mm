@@ -2,11 +2,11 @@
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
 <node CREATED="1273819432637" ID="ID_1098419600" MODIFIED="1334737006485" TEXT="Mindapp">
 <node CREATED="1273819462973" ID="ID_282419531" MODIFIED="1334737064016" POSITION="right" TEXT="services">
-<node CREATED="1275756501221" FOLDED="true" ID="ID_1720745721" MODIFIED="1398499179623" TEXT="users: User">
+<node CREATED="1275756501221" ID="ID_1720745721" MODIFIED="1398526808376" TEXT="users: User">
 <node CREATED="1278491598711" ID="ID_1662699954" MODIFIED="1278491602025" TEXT="role:m"/>
-<node CREATED="1279700865182" ID="ID_1266797279" MODIFIED="1358160458637" TEXT="link:&#xe02;&#xe49;&#xe2d;&#xe21;&#xe39;&#xe25;&#xe2a;&#xe21;&#xe32;&#xe0a;&#xe34;&#xe01;: /users"/>
-<node CREATED="1319015338880" ID="ID_189841353" MODIFIED="1358160473662" TEXT="link:&#xe07;&#xe32;&#xe19;&#xe17;&#xe35;&#xe48;&#xe2d;&#xe22;&#xe39;&#xe48;&#xe23;&#xe30;&#xe2b;&#xe27;&#xe48;&#xe32;&#xe07;&#xe14;&#xe33;&#xe40;&#xe19;&#xe34;&#xe19;&#xe01;&#xe32;&#xe23;: /mindapp/pending"/>
-<node CREATED="1275905802131" FOLDED="true" ID="ID_154000410" MODIFIED="1398499179619" TEXT="user:&#xe41;&#xe01;&#xe49;&#xe44;&#xe02;&#xe02;&#xe49;&#xe2d;&#xe21;&#xe39;&#xe25;">
+<node CREATED="1279700865182" ID="ID_1266797279" MODIFIED="1398526864542" TEXT="link:Account: /users"/>
+<node CREATED="1319015338880" ID="ID_189841353" MODIFIED="1398526884262" TEXT="link:Pending Process: /mindapp/pending"/>
+<node CREATED="1275905802131" ID="ID_154000410" MODIFIED="1398526898069" TEXT="user:Edit">
 <node CREATED="1275756515843" FOLDED="true" ID="ID_1108188320" MODIFIED="1398499179618" TEXT="enter_user:edit">
 <icon BUILTIN="attach"/>
 <node CREATED="1282816887988" ID="ID_1767357871" MODIFIED="1282817769412" TEXT="rule:login? &amp;&amp; own_xmain?"/>
@@ -15,7 +15,7 @@
 <icon BUILTIN="bookmark"/>
 </node>
 </node>
-<node CREATED="1275756504750" FOLDED="true" ID="ID_1382277695" MODIFIED="1398499179621" TEXT="pwd:&#xe40;&#xe1b;&#xe25;&#xe35;&#xe48;&#xe22;&#xe19;&#xe23;&#xe2b;&#xe31;&#xe2a;&#xe1c;&#xe48;&#xe32;&#xe19;">
+<node CREATED="1275756504750" FOLDED="true" ID="ID_1382277695" MODIFIED="1398526925705" TEXT="pwd:Change Password">
 <node CREATED="1275756515843" FOLDED="true" ID="ID_1559014937" MODIFIED="1398499179620" TEXT="enter: edit">
 <icon BUILTIN="attach"/>
 <node CREATED="1282816887988" ID="ID_2948144" MODIFIED="1282817769412" TEXT="rule:login? &amp;&amp; own_xmain?"/>
@@ -70,7 +70,6 @@
 <node CREATED="1273913393454" ID="ID_1867043363" MODIFIED="1398423935450" TEXT="link:Link Page: /info/samples"/>
 <node CREATED="1359089665177" ID="ID_342304884" MODIFIED="1398441749588" TEXT="link: Views: /sample/views"/>
 <node CREATED="1359089665177" ID="ID_1001427639" MODIFIED="1398441440685" TEXT="link: Models: /sample/models"/>
-<node CREATED="1359089665177" ID="ID_1445436919" MODIFIED="1398441428781" TEXT="link: Controllers: /sample/controllers"/>
 <node CREATED="1359090866384" ID="ID_197794553" MODIFIED="1398428088895" TEXT="newcode: Record code / sample">
 <node CREATED="1359090876116" ID="ID_383855440" MODIFIED="1398427838069" TEXT="entercode: Record Code">
 <icon BUILTIN="attach"/>

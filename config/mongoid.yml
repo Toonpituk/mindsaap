@@ -5,7 +5,7 @@ development:
     default:
       # Defines the name of the default database that Mongoid can connect to.
       # (required).
-      database: bt9_development
+      database: mindsaap_development
       # Provides the hosts the default session can connect to. Must be an array
       # of host:port pairs. (required)
       hosts:
@@ -52,7 +52,7 @@ development:
     # Raise an error when performing a #find and the document is not found.
     # (default: true)
     # raise_not_found_error: true
-  raise_not_found_error: false
+    raise_not_found_error: false
 
     # Raise an error when defining a scope with the same name as an
     # existing method. (default: false)
@@ -70,7 +70,7 @@ development:
 test:
   sessions:
     default:
-      database: bt9_test
+      database: mindsaap_test
       hosts:
         - localhost:27017
       options:
@@ -79,21 +79,3 @@ test:
         # low amounts for fast failures.
         max_retries: 1
         retry_interval: 0
-
-production_test:
-  sessions:
-    default:
-      database: bt9_development
-      hosts:
-        - localhost:27017
-      options:
-  options:
-  raise_not_found_error: false
-
-production:
-  sessions:
-    default:
-      uri: <%= ENV['MONGOHQ_URL'] %>
-      options:
-        skip_version_check: true
-        safe: true

@@ -10,14 +10,9 @@ class SampleController < ApplicationController
     @activities = Code.where(:atype=>2).desc(:created_at).page(params[:page]).per(10)
     render :template=> "sample/views"
   end
-  def controllers
-    @title= "Controllers"
-    @activities = Code.where(:atype=>3).desc(:created_at).page(params[:page]).per(10)
-    render :template=> "sample/views"
-  end
   def show
     @activity = Code.find params[:id]
-    render :template=> "sample/views"
+    render :template=> "sample/show"
   end
   def rm
     @activity = Code.find params[:id]

@@ -5,9 +5,9 @@ require File.expand_path('../boot', __FILE__)
 require "action_controller/railtie"
 require "action_mailer/railtie"
 require "active_resource/railtie"
-require 'mongoid/railtie'
+require 'rexml/document'
+
 require "sprockets/railtie"
-require "rexml/document"
 # require "rails/test_unit/railtie"
 
 if defined?(Bundler)
@@ -17,7 +17,7 @@ if defined?(Bundler)
   # Bundler.require(:default, :assets, Rails.env)
 end
 
-module Bt9
+module Mindsaap
   class Application < Rails::Application
     
   # Mindapp default
@@ -32,8 +32,8 @@ module Bt9
   config.action_mailer.smtp_settings = {
     :address              => "smtp.gmail.com",
     :port                 => 587,
-    :user_name            => 'dlocthai@gmail.com',
-    :password             => 'dit0kpveok0',
+    :user_name            => 'user@gmail.com',
+    :password             => 'secret',
     :authentication       => 'plain',
     :enable_starttls_auto => true  }
   config.action_mailer.raise_delivery_errors = true
@@ -56,7 +56,6 @@ module Bt9
     # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
     # Run "rake -D time" for a list of tasks for finding time zone names. Default is UTC.
     # config.time_zone = 'Central Time (US & Canada)'
-    config.time_zone = 'Bangkok'
 
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]

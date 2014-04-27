@@ -1,10 +1,10 @@
 # encoding: utf-8
 MM = "#{Rails.root}/app/mindapp/index.mm"
-DEFAULT_TITLE = 'MindApp'
-DEFAULT_HEADER = 'MindApp'
+DEFAULT_TITLE = 'Mindapp'
+DEFAULT_HEADER = 'Mindapp'
 GMAP = true
 NEXT = "Next >"
-# unset IMAGE_LOCATION to use cloudinary
-# IMAGE_LOCATION = "upload"
+# comment IMAGE_LOCATION to use cloudinary (specify params in config/cloudinary.yml)
+IMAGE_LOCATION = "upload"
 # for debugging
 # DONT_SEND_MAIL = true

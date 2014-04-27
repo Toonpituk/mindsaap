@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Bt9::Application.load_tasks
+Mindsaap::Application.load_tasks
