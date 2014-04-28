@@ -1,18 +1,21 @@
 source 'https://rubygems.org'
+
 # Fixed for heroku
-ruby '1.9.3' 
+  ruby '1.9.3' 
+  gem 'sass', '3.2.13'
+  group :production do
+    gem 'rails_12factor'
+  end
+  gem "mindapp",  :git=> "https://github.com/songrit/mindapp.git"
+# End Fixed for heroku
+
 gem 'rails', '3.2.11'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-# Fixed for heroku
-gem "mindapp",  :git=> "https://github.com/songrit/mindapp.git"
-# Fixed for heroku
-group :production do
-  gem 'rails_12factor'
-end
-# Fixed for heroku
-gem 'sass', '3.2.13'
+
+
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -62,5 +65,3 @@ group :development, :test do
   gem "binding_of_caller"
 end
 
-group :development, :test do
-end
