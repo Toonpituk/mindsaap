@@ -1,15 +1,18 @@
 source 'https://rubygems.org'
-ruby '1.9.3' #Fixed heroku push
+# Fixed for heroku
+ruby '1.9.3' 
 gem 'rails', '3.2.11'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
+# Fixed for heroku
 gem "mindapp",  :git=> "https://github.com/songrit/mindapp.git"
-
-group :production do #Fixed heroku push
+# Fixed for heroku
+group :production do
   gem 'rails_12factor'
 end
-gem 'sass', '3.2.13' # Fixed heroku push
+# Fixed for heroku
+gem 'sass', '3.2.13'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
